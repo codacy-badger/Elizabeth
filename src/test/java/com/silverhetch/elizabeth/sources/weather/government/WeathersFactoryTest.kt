@@ -15,7 +15,13 @@ class WeathersFactoryTest {
     fun location() {
         val weathers = WeathersFactory(WeatherConfig()).instance()
         for (weather in weathers.all()) {
-            System.out.println(weather.locationName())
+            Assert.assertFalse(weather.locationName().isEmpty())
         }
+    }
+
+    @Test
+    fun cityNumber() {
+        val weathers = WeathersFactory(WeatherConfig()).instance()
+        Assert.assertEquals(22, weathers.all().size)
     }
 }
