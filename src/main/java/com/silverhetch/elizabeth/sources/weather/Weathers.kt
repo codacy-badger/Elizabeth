@@ -1,4 +1,5 @@
 package com.silverhetch.elizabeth.sources.weather
 
-interface Weather {
+interface Weathers {
+    fun all(): Array<Weather>
 }

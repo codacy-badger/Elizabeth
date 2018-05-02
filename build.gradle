@@ -45,4 +45,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     implementation 'com.silverhetch:clotho:1.0.5-SNAPSHOT'
     implementation 'org.takes:takes:1.11'
+    implementation 'com.google.code.gson:gson:2.8.4'
 }

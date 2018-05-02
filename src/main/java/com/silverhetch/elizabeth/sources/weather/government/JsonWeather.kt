@@ -1,6 +1,8 @@
 package com.silverhetch.elizabeth.sources.weather.government
 
+import com.google.gson.JsonObject
 import com.silverhetch.elizabeth.sources.weather.Weather
 
-class JsonWeather(private val json: String) : Weather {
+internal class JsonWeather(private val json: JsonObject) : Weather {
+
 }

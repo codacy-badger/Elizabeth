@@ -4,11 +4,12 @@ import com.silverhetch.clotho.connection.Get
 import com.silverhetch.clotho.connection.TargetImpl
 import com.silverhetch.elizabeth.sources.Factory
 import com.silverhetch.elizabeth.sources.weather.StringSource
+import com.silverhetch.elizabeth.sources.weather.Weathers
 import sun.security.ssl.SSLSocketFactoryImpl
 
-class WeatherSourceFactory(private val config: Config) : Factory<WeatherSource> {
-    override fun instance(): WeatherSource {
-        return WeatherSource(
+internal class WeathersFactory(private val config: Config) : Factory<Weathers> {
+    override fun instance(): Weathers {
+        return JsonWeathers(
           StringSource(
             Get(
               TargetImpl(url(), SSLSocketFactoryImpl())
