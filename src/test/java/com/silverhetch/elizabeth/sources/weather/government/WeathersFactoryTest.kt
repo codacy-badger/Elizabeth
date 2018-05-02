@@ -10,4 +10,12 @@ class WeathersFactoryTest {
         val weathers = WeathersFactory(WeatherConfig()).instance()
         Assert.assertNotNull(weathers)
     }
+
+    @Test
+    fun location() {
+        val weathers = WeathersFactory(WeatherConfig()).instance()
+        for (weather in weathers.all()) {
+            System.out.println(weather.locationName())
+        }
+    }
 }
