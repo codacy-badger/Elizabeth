@@ -13,6 +13,6 @@ class AverageTemperatureTest {
           MinTemperature(StaticJsonArrayMinT().value())
         ).value()
 
-        Assert.assertEquals(29, average)
+        Assert.assertEquals(29f, average)
     }
 }
