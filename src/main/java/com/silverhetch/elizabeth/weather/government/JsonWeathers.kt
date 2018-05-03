@@ -1,9 +1,9 @@
-package com.silverhetch.elizabeth.sources.weather.government
+package com.silverhetch.elizabeth.weather.government
 
 import com.google.gson.JsonParser
-import com.silverhetch.elizabeth.sources.Source
-import com.silverhetch.elizabeth.sources.weather.Weather
-import com.silverhetch.elizabeth.sources.weather.Weathers
+import com.silverhetch.elizabeth.arch.Source
+import com.silverhetch.elizabeth.weather.Weather
+import com.silverhetch.elizabeth.weather.Weathers
 
 internal class JsonWeathers(private val source: Source<String>) : Weathers {
     override fun all(): Array<Weather> {

@@ -1,4 +1,4 @@
-package com.silverhetch.elizabeth.sources.weather;
+package com.silverhetch.elizabeth.weather;
 
 interface Weather {
     fun locationName(): String

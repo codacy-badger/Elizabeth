@@ -1,4 +1,4 @@
-package com.silverhetch.elizabeth.sources
+package com.silverhetch.elizabeth.arch
 
 interface Factory<T> {
     fun instance(): T

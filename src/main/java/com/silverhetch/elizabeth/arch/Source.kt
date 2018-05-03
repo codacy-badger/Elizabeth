@@ -1,4 +1,4 @@
-package com.silverhetch.elizabeth.sources
+package com.silverhetch.elizabeth.arch
 
 interface Source<T> {
     fun fetch(): T

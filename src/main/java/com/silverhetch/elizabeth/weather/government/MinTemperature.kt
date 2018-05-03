@@ -1,4 +1,4 @@
-package com.silverhetch.elizabeth.sources.weather.government
+package com.silverhetch.elizabeth.weather.government
 
 import com.google.gson.JsonArray
 

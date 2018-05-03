@@ -1,4 +1,4 @@
-package com.silverhetch.elizabeth.sources.weather.government
+package com.silverhetch.elizabeth.weather.government
 
 class AverageTemperature(private vararg val temperatures: Temperature) : Temperature {
     override fun value(): Float {

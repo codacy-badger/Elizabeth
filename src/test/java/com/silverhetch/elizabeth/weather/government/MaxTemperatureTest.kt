@@ -1,8 +1,8 @@
-package com.silverhetch.elizabeth.sources.weather.government
+package com.silverhetch.elizabeth.weather.government
 
 import com.google.gson.JsonParser
-import com.silverhetch.elizabeth.sources.weather.government.utility.StaticJsonArrayMaxT
-import com.silverhetch.elizabeth.sources.weather.government.utility.StaticJsonArrayNonExist
+import com.silverhetch.elizabeth.weather.government.utility.StaticJsonArrayMaxT
+import com.silverhetch.elizabeth.weather.government.utility.StaticJsonArrayNonExist
 import org.junit.Assert.assertEquals
 import org.junit.Assert.fail
 import org.junit.Test

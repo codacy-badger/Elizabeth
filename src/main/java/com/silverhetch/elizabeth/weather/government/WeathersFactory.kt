@@ -1,10 +1,10 @@
-package com.silverhetch.elizabeth.sources.weather.government
+package com.silverhetch.elizabeth.weather.government
 
 import com.silverhetch.clotho.connection.Get
 import com.silverhetch.clotho.connection.TargetImpl
-import com.silverhetch.elizabeth.sources.Factory
-import com.silverhetch.elizabeth.sources.weather.StringSource
-import com.silverhetch.elizabeth.sources.weather.Weathers
+import com.silverhetch.elizabeth.arch.Factory
+import com.silverhetch.elizabeth.weather.StringSource
+import com.silverhetch.elizabeth.weather.Weathers
 import sun.security.ssl.SSLSocketFactoryImpl
 
 internal class WeathersFactory(private val config: Config) : Factory<Weathers> {

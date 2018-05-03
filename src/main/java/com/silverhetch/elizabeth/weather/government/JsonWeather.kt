@@ -1,7 +1,7 @@
-package com.silverhetch.elizabeth.sources.weather.government
+package com.silverhetch.elizabeth.weather.government
 
 import com.google.gson.JsonObject
-import com.silverhetch.elizabeth.sources.weather.Weather
+import com.silverhetch.elizabeth.weather.Weather
 
 internal class JsonWeather(private val city: JsonObject) : Weather {
     override fun locationName(): String {

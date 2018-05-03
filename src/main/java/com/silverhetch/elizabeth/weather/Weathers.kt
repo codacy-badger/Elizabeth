@@ -1,4 +1,4 @@
-package com.silverhetch.elizabeth.sources.weather
+package com.silverhetch.elizabeth.weather
 
 interface Weathers {
     fun all(): Array<Weather>

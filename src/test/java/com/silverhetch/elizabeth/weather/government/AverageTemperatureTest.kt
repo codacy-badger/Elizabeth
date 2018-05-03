@@ -1,7 +1,7 @@
-package com.silverhetch.elizabeth.sources.weather.government
+package com.silverhetch.elizabeth.weather.government
 
-import com.silverhetch.elizabeth.sources.weather.government.utility.StaticJsonArrayMaxT
-import com.silverhetch.elizabeth.sources.weather.government.utility.StaticJsonArrayMinT
+import com.silverhetch.elizabeth.weather.government.utility.StaticJsonArrayMaxT
+import com.silverhetch.elizabeth.weather.government.utility.StaticJsonArrayMinT
 import org.junit.Assert
 import org.junit.Test
 
