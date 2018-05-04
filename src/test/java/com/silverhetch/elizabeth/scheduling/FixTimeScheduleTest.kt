@@ -19,4 +19,21 @@ class FixTimeScheduleTest {
         countDown.await(10000, MILLISECONDS)
         assertEquals(0, countDown.count)
     }
+
+    @Test
+    fun cancel() {
+        val countDown = CountDownLatch(3)
+        val schedule = FixTimeSchedule(StaticTasks(
+          arrayOf(object : Task {
+              override fun run() {
+                  countDown.countDown()
+              }
+          })
+        ), 50L)
+        schedule.start()
+        countDown.await(10, MILLISECONDS)
+        schedule.stop()
+        countDown.await(50, MILLISECONDS)
+        assertEquals(3, countDown.count)
+    }
 }
