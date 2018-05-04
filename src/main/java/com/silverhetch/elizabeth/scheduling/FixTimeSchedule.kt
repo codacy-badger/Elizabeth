@@ -12,7 +12,7 @@ class FixTimeSchedule(private val tasks: Tasks, private val delay: Long = 60000L
                     it.run()
                 }
             }
-        }, delay, delay)
+        }, 0, delay)
     }
 
     override fun stop() {

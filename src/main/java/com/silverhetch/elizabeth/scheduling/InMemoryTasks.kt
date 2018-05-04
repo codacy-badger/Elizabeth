@@ -1,7 +1,7 @@
 package com.silverhetch.elizabeth.scheduling
 
-class InMemoryTasks : Tasks {
-    private val tasks = ArrayList<Task>()
+class InMemoryTasks(tasks: List<Task>) : Tasks {
+    private val tasks = ArrayList<Task>(tasks)
 
     override fun all(): Array<Task> {
         return tasks.toArray(Array(tasks.size, { tasks[it] }))

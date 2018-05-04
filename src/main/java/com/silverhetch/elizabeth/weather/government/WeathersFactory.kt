@@ -3,11 +3,12 @@ package com.silverhetch.elizabeth.weather.government
 import com.silverhetch.clotho.connection.Get
 import com.silverhetch.clotho.connection.TargetImpl
 import com.silverhetch.elizabeth.arch.Factory
+import com.silverhetch.elizabeth.configs.WeatherConfig
 import com.silverhetch.elizabeth.weather.StringSource
 import com.silverhetch.elizabeth.weather.Weathers
 import sun.security.ssl.SSLSocketFactoryImpl
 
-internal class WeathersFactory(private val config: Config) : Factory<Weathers> {
+internal class WeathersFactory() : Factory<Weathers> {
     override fun instance(): Weathers {
         return JsonWeathers(
           StringSource(
@@ -20,6 +21,6 @@ internal class WeathersFactory(private val config: Config) : Factory<Weathers> {
 
     private fun url(): String {
         val url = "https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization="
-        return url + config.weatherAuthKey()
+        return url + WeatherConfig().weatherAuthKey()
     }
 }

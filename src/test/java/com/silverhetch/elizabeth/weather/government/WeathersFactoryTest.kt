@@ -7,13 +7,13 @@ import org.junit.Test
 class WeathersFactoryTest {
     @Test
     fun fetchSuccess() {
-        val weathers = WeathersFactory(WeatherConfig()).instance()
+        val weathers = WeathersFactory().instance()
         Assert.assertNotNull(weathers)
     }
 
     @Test
     fun location() {
-        val weathers = WeathersFactory(WeatherConfig()).instance()
+        val weathers = WeathersFactory().instance()
         for (weather in weathers.all()) {
             Assert.assertFalse(weather.locationName().isEmpty())
         }
@@ -21,7 +21,7 @@ class WeathersFactoryTest {
 
     @Test
     fun cityNumber() {
-        val weathers = WeathersFactory(WeatherConfig()).instance()
+        val weathers = WeathersFactory().instance()
         Assert.assertEquals(22, weathers.all().size)
     }
 }
