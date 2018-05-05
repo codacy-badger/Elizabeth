@@ -8,7 +8,7 @@ import com.silverhetch.elizabeth.weather.StringSource
 import com.silverhetch.elizabeth.weather.Weathers
 import sun.security.ssl.SSLSocketFactoryImpl
 
-class WeathersFactory() : Factory<Weathers> {
+class WeatherGovernment() : Factory<Weathers> {
     override fun instance(): Weathers {
         return JsonWeathers(
           StringSource(
