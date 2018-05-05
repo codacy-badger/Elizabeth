@@ -1,9 +1,8 @@
 package com.silverhetch.elizabeth.weather.government
 
-import com.google.gson.JsonArray
 import com.google.gson.JsonParser
-import org.junit.Assert
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
+import org.junit.Assert.fail
 import org.junit.Test
 
 class MinTemperatureTest {

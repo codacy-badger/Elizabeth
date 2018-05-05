@@ -1,7 +1,7 @@
 package com.silverhetch.elizabeth.weather.government
 
 import com.silverhetch.elizabeth.weather.government.utility.StaticJsonWeather
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
 import org.junit.Test
 
 class JsonWeathersTest {

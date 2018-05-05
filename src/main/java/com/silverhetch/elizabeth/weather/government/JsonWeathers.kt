@@ -5,7 +5,7 @@ import com.silverhetch.elizabeth.arch.Source
 import com.silverhetch.elizabeth.weather.Weather
 import com.silverhetch.elizabeth.weather.Weathers
 
-internal class JsonWeathers(private val source: Source<String>) : Weathers {
+class JsonWeathers(private val source: Source<String>) : Weathers {
     override fun all(): Array<Weather> {
         val json = JsonParser().parse(source.fetch()).asJsonObject
         val records = json.getAsJsonObject("records")

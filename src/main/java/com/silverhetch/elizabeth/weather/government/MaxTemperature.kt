@@ -2,7 +2,7 @@ package com.silverhetch.elizabeth.weather.government
 
 import com.google.gson.JsonArray
 
-class MaxTemperature(private val weather:JsonArray) : Temperature {
+class MaxTemperature(private val weather: JsonArray) : Temperature {
     override fun value(): Float {
         for (i in 0..(weather.size() - 1)) {
             val element = weather.get(i).asJsonObject

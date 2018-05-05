@@ -1,6 +1,5 @@
 package com.silverhetch.elizabeth
 
-import com.silverhetch.elizabeth.configs.WeatherConfig
 import com.silverhetch.elizabeth.weather.government.WeathersFactory
 
 class WeatherUpdate : Runnable {

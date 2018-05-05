@@ -1,6 +1,5 @@
 package com.silverhetch.elizabeth.weather.government
 
-import com.silverhetch.elizabeth.configs.WeatherConfig
 import org.junit.Assert
 import org.junit.Test
 
