@@ -3,10 +3,10 @@ package com.silverhetch.elizabeth.weather.government
 import org.junit.Assert
 import org.junit.Test
 
-class WeatherGovernmentTest {
+class GovernmentWeathersTest {
     @Test
     fun cityNumber() {
-        val weathers = WeatherGovernment().instance()
+        val weathers = GovernmentWeathers().instance()
         Assert.assertEquals(22, weathers.all().size)
     }
 }

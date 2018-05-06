@@ -1,0 +1,7 @@
+package com.silverhetch.elizabeth.bus.government.utility
+
+class StaticBusRouteJson {
+    fun value(): String {
+        return "{\"RouteUID\":\"TPE10132\",\"RouteID\":\"10132\",\"HasSubRoutes\":true,\"OperatorIDs\":[\"100\"],\"Operators\":[{\"OperatorID\":\"100\",\"OperatorName\":{\"Zh_tw\":\"臺北客運\",\"En\":\"Taipei Bus Co., Ltd.\"},\"OperatorCode\":\"TaipeiBus\"}],\"AuthorityID\":\"004\",\"ProviderID\":\"004\",\"SubRoutes\":[{\"SubRouteUID\":\"TPE101320\",\"SubRouteID\":\"101320\",\"OperatorIDs\":[\"100\"],\"SubRouteName\":{\"Zh_tw\":\"234\",\"En\":\"234\"},\"Direction\":0,\"FirstBusTime\":\"0450\",\"LastBusTime\":\"2240\",\"HolidayFirstBusTime\":\"0450\"},{\"SubRouteUID\":\"TPE101320\",\"SubRouteID\":\"101320\",\"OperatorIDs\":[\"100\"],\"SubRouteName\":{\"Zh_tw\":\"234\",\"En\":\"234\"},\"Direction\":1,\"FirstBusTime\":\"0450\",\"LastBusTime\":\"2240\",\"HolidayFirstBusTime\":\"0450\",\"HolidayLastBusTime\":\"2240\"}],\"BusRouteType\":11,\"RouteName\":{\"Zh_tw\":\"234\",\"En\":\"234\"},\"DepartureStopNameZh\":\"板橋\",\"DepartureStopNameEn\":\"Banqiao\",\"DestinationStopNameZh\":\"西門\",\"DestinationStopNameEn\":\"Ximen\",\"TicketPriceDescriptionZh\":\"一段票\",\"TicketPriceDescriptionEn\":\"1 segment\",\"FareBufferZoneDescriptionZh\":\"\",\"FareBufferZoneDescriptionEn\":\"\",\"City\":\"Taipei\",\"CityCode\":\"TPE\",\"UpdateTime\":\"2018-05-05T04:21:14+08:00\",\"VersionID\":239}";
+    }
+}
