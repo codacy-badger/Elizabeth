@@ -11,8 +11,8 @@ class JsonWeather(private val city: JsonObject) : Weather {
     override fun celsius(): Float {
         val json = city.getAsJsonArray("weatherElement")
         return AverageTemperature(
-          MinTemperature(json),
-          MaxTemperature(json)
+            MinTemperature(json),
+            MaxTemperature(json)
         ).value()
     }
 }

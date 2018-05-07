@@ -9,7 +9,7 @@ class JsonBusTest {
     @Test
     fun name() {
         val name = JsonBus(
-          JsonParser().parse(StaticBusRouteJson().value()).asJsonObject
+            JsonParser().parse(StaticBusRouteJson().value()).asJsonObject
         ).name()
 
         Assert.assertEquals("234", name)

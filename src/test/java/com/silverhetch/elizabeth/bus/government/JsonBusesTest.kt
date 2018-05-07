@@ -9,7 +9,7 @@ class JsonBusesTest {
     @Test
     fun busCount() {
         val buses = JsonBuses(
-          StaticSource(StaticBusRouteJsonArray().value())
+            StaticSource(StaticBusRouteJsonArray().value())
         ).all()
 
         Assert.assertEquals(2, buses.size)

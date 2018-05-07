@@ -9,8 +9,8 @@ class AverageTemperatureTest {
     @Test
     fun simple() {
         val average = AverageTemperature(
-          MaxTemperature(StaticJsonArrayMaxT().value()),
-          MinTemperature(StaticJsonArrayMinT().value())
+            MaxTemperature(StaticJsonArrayMaxT().value()),
+            MinTemperature(StaticJsonArrayMinT().value())
         ).value()
 
         Assert.assertEquals(29f, average)

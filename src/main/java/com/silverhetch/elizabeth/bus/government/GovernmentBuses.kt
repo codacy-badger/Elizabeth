@@ -13,23 +13,23 @@ class GovernmentBuses(private val config: Config) : Factory<Buses> {
     override fun instance(): Buses {
         Timestamp().fetch().let { timestamp ->
             return JsonBuses(
-              HttpSource(
-                Get(
-                  TargetImpl("http://ptx.transportdata.tw/MOTC/v2/Bus/Route/City/Taipei?top=30&format=JSON", SSLSocketFactoryImpl()),
-                  object : Headers {
-                      override fun values(): Map<String, String> {
-                          return hashMapOf(
-                            "Accept" to "application/json",
-                            "x-date" to timestamp,
-                            "Authorization" to AuthString(
-                              config,
-                              Base64Encode(HmacSHA1(XDateString(timestamp), config.appKey()))
-                            ).fetch()
-                          )
-                      }
-                  }
+                HttpSource(
+                    Get(
+                        TargetImpl("http://ptx.transportdata.tw/MOTC/v2/Bus/Route/City/Taipei?top=30&format=JSON", SSLSocketFactoryImpl()),
+                        object : Headers {
+                            override fun values(): Map<String, String> {
+                                return hashMapOf(
+                                    "Accept" to "application/json",
+                                    "x-date" to timestamp,
+                                    "Authorization" to AuthString(
+                                        config,
+                                        Base64Encode(HmacSHA1(XDateString(timestamp), config.appKey()))
+                                    ).fetch()
+                                )
+                            }
+                        }
+                    )
                 )
-              )
             )
         }
     }

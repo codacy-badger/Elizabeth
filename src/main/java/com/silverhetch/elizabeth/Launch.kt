@@ -8,8 +8,8 @@ import java.util.concurrent.TimeUnit.MINUTES
 
 fun main(args: Array<String>) {
     FixTimeSchedule(
-      InMemoryTasks(listOf(
-        FixTimeTask(WeatherUpdate(), HOURS.toMillis(1))
-      )), MINUTES.toMillis(1)
+        InMemoryTasks(listOf(
+            FixTimeTask(WeatherUpdate(), HOURS.toMillis(1))
+        )), MINUTES.toMillis(1)
     ).start()
 }

@@ -10,11 +10,11 @@ class FixTimeScheduleTest {
     fun simple() {
         val countDown = CountDownLatch(3)
         FixTimeSchedule(StaticTasks(
-          arrayOf(object : Task {
-              override fun run() {
-                  countDown.countDown()
-              }
-          })
+            arrayOf(object : Task {
+                override fun run() {
+                    countDown.countDown()
+                }
+            })
         ), 10L).start()
         countDown.await(10000, MILLISECONDS)
         assertEquals(0, countDown.count)
@@ -24,11 +24,11 @@ class FixTimeScheduleTest {
     fun cancel() {
         val countDown = CountDownLatch(3)
         val schedule = FixTimeSchedule(StaticTasks(
-          arrayOf(object : Task {
-              override fun run() {
-                  countDown.countDown()
-              }
-          })
+            arrayOf(object : Task {
+                override fun run() {
+                    countDown.countDown()
+                }
+            })
         ), 50L)
         schedule.start()
         countDown.await(10, MILLISECONDS)
@@ -42,11 +42,11 @@ class FixTimeScheduleTest {
     fun trigger_immediately() {
         val countDown = CountDownLatch(3)
         val schedule = FixTimeSchedule(StaticTasks(
-          arrayOf(object : Task {
-              override fun run() {
-                  countDown.countDown()
-              }
-          })
+            arrayOf(object : Task {
+                override fun run() {
+                    countDown.countDown()
+                }
+            })
         ), 50L)
         schedule.start()
         countDown.await(10, MILLISECONDS)
