@@ -1,14 +1,14 @@
-package com.silverhetch.elizabeth.bus.government
+package com.silverhetch.elizabeth.bus.government.route
 
 import com.silverhetch.elizabeth.arch.StaticSource
-import com.silverhetch.elizabeth.bus.government.utility.StaticBusRouteJsonArray
+import com.silverhetch.elizabeth.bus.government.route.utility.StaticBusRouteJsonArray
 import org.junit.Assert
 import org.junit.Test
 
-class JsonBusesTest {
+class JsonRoutesTest {
     @Test
     fun busCount() {
-        val buses = JsonBuses(
+        val buses = JsonRoutes(
             StaticSource(StaticBusRouteJsonArray().value())
         ).all()
 

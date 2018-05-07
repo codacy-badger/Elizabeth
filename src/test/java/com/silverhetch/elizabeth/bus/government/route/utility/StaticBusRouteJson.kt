@@ -1,4 +1,4 @@
-package com.silverhetch.elizabeth.bus.government.utility
+package com.silverhetch.elizabeth.bus.government.route.utility
 
 class StaticBusRouteJson {
     fun value(): String {

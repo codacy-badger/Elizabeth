@@ -1,4 +1,4 @@
-package com.silverhetch.elizabeth.bus.government
+package com.silverhetch.elizabeth.bus.government.route
 
 import com.silverhetch.elizabeth.arch.Pipeline
 

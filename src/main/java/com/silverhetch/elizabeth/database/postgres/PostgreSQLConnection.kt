@@ -6,7 +6,7 @@ import java.sql.DriverManager
 import java.util.*
 
 class PostgreSQLConnection(private val config: Config) : Factory<Connection> {
-    override fun instance(): Connection{
+    override fun instance(): Connection {
         val url = "jdbc:postgresql://${config.host()}/${config.database()}"
         val properties = Properties()
         properties.setProperty("user", config.username())
