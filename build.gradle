@@ -36,5 +36,6 @@ dependencies {
     implementation 'org.takes:takes:1.11'
     implementation 'com.google.code.gson:gson:2.8.4'
     implementation 'org.xerial:sqlite-jdbc:3.21.0'
+    implementation 'org.postgresql:postgresql:42.2.2'
     implementation 'org.cactoos:cactoos:0.30'
 }
