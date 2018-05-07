@@ -24,7 +24,7 @@ class GovernmentBuses(private val config: Config) : Factory<Buses> {
                                     "Authorization" to AuthString(
                                         config,
                                         Base64Encode(HmacSHA1(XDateString(timestamp), config.appKey()))
-                                    ).fetch()
+                                    ).compute()
                                 )
                             }
                         }
