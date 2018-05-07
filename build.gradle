@@ -24,6 +24,7 @@ compileTestKotlin {
 
 repositories {
     mavenCentral()
+    jcenter()
     maven { url = 'http://172.104.79.181:81/repository/maven-public/' }
     maven { url = 'https://jitpack.io' }
 }
