@@ -1,12 +1,13 @@
-package com.silverhetch.elizabeth.bus.government.route
+package com.silverhetch.elizabeth.bus.government
 
+import com.silverhetch.elizabeth.arch.Pipeline
 import com.silverhetch.elizabeth.arch.Source
 import java.text.SimpleDateFormat
 import java.util.*
 
 
-class Timestamp : Source<String> {
-    override fun fetch(): String {
+class Timestamp : Pipeline<String> {
+    override fun compute(): String {
         val calendar = Calendar.getInstance()
         val dateFormat = SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss z")
         dateFormat.timeZone = TimeZone.getTimeZone("GMT")
