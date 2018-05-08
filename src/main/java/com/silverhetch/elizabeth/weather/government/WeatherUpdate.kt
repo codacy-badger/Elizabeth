@@ -1,6 +1,4 @@
-package com.silverhetch.elizabeth
-
-import com.silverhetch.elizabeth.weather.government.GovernmentWeathers
+package com.silverhetch.elizabeth.weather.government
 
 class WeatherUpdate : Runnable {
     override fun run() {

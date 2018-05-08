@@ -3,6 +3,7 @@ package com.silverhetch.elizabeth
 import com.silverhetch.elizabeth.scheduling.FixTimeSchedule
 import com.silverhetch.elizabeth.scheduling.FixTimeTask
 import com.silverhetch.elizabeth.scheduling.InMemoryTasks
+import com.silverhetch.elizabeth.weather.government.WeatherUpdate
 import java.util.concurrent.TimeUnit.HOURS
 import java.util.concurrent.TimeUnit.MINUTES
 
