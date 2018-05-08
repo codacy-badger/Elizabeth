@@ -4,7 +4,7 @@ import com.google.gson.JsonArray
 
 class MinTemperature(private val weather: JsonArray) : Temperature {
     override fun value(): Float {
-        for (i in 0..(weather.size() - 1)) {
+        (0..(weather.size() - 1)).forEach { i ->
             val element = weather.get(i).asJsonObject
             if ("MinT" == element.get("elementName").asString) {
                 val currentTime = element.getAsJsonArray("time")[0].asJsonObject
